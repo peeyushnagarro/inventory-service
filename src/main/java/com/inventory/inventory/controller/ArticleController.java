@@ -16,7 +16,6 @@ import org.apache.logging.log4j.Logger;
 
 import com.inventory.inventory.dto.Article;
 import com.inventory.inventory.exception.ArticleNotFoundException;
-import com.inventory.inventory.service.ArticleService;
 
 @RestController
 @RequestMapping(path="/api/article/")
