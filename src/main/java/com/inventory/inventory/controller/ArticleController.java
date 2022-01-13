@@ -18,7 +18,7 @@ import com.inventory.inventory.dto.Article;
 import com.inventory.inventory.exception.ArticleNotFoundException;
 
 @RestController
-@RequestMapping(path="/api/article/")
+@RequestMapping(path="/api/articles")
 public class ArticleController {
 
 	private HashMap<Integer, Article> articleMap;
@@ -55,7 +55,7 @@ public class ArticleController {
 		articleMap.put(232, artical3);
 	}
 	
-	@GetMapping("{articleId}")
+	@GetMapping("/{articleId}")
 	public Article getArticle(@PathVariable int articleId) {
 		Article article = articleMap.get(articleId);
 		
